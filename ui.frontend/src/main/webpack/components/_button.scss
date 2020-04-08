@@ -1,4 +1,9 @@
-.cmp-button {}
-.cmp-button__text {}
-.cmp-button__icon {}
-//.cmp-button__icon--myIcon {}
+.cmp-button {
+  padding: 1rem;
+  background-color: white;
+  transition: all 300ms;
+}
+.cmp-button:hover {
+  background-color: #0e83cd;
+  color: white;
+}
