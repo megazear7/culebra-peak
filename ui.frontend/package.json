@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "webpack -d --env dev --config ./webpack.dev.js && clientlib --verbose",
     "prod": "webpack -p --config ./webpack.prod.js && clientlib --verbose",
-    "start": "webpack-dev-server --open --config ./webpack.dev.js"
+    "start": "webpack-dev-server --open --config ./webpack.dev.js",
+    "storybook": "start-storybook -p 4501"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
@@ -53,5 +54,29 @@
   "browserslist": [
     "last 2 version",
     "> 1%"
-  ]
+  ],
+  "@storybook/aem-cli": {
+    "storybookLocation": ".storybook",
+    "storybookStoryLocation": "./stories",
+    "localPackagePath": ".storybook/aem-library/",
+    "appsPath": "../ui.apps/src/main/content/jcr_root/apps",
+    "componentPaths": [
+      "../ui.apps/src/main/content/jcr_root/apps/culebra-peak/components"
+    ],
+    "storybookAEMStyleSystem": true,
+    "storybookAEMGrid": true,
+    "storybookAEMPageTemplate": true,
+    "storybookAEMConfluence": false,
+    "storybookAEMFoundation": false,
+    "aemContentDefaultPageResourceType": "culebra-peak/components/page",
+    "aemContentDefaultPageTemplate": "/conf/culebra-peak/settings/wcm/templates/page-content",
+    "aemContentDefaultPageContentPath": "/root/container/container",
+    "aemStoryHeadingComponentResourceType": "culebra-peak/components/title",
+    "aemStoryHeadingComponentTitleProperty": "jcr:title",
+    "storyRoot": "Components",
+    "packageGroup": "culebrapeak",
+    "packageName": "Culebra Peak Storybook Library.zip",
+    "aemContentPath": "/content/culebra-peak-design-system",
+    "createAEMContent": true
+  }
 }
