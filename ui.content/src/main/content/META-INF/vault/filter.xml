@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<workspaceFilter version="1.0">
+    <filter root="/conf/culebra-peak" mode="merge"/>
+    <filter root="/content/culebra-peak" mode="merge"/>
+    <filter root="/content/dam/culebra-peak" mode="merge"/>
+    <filter root="/content/experience-fragments/culebra-peak" mode="merge"/>
+</workspaceFilter>
