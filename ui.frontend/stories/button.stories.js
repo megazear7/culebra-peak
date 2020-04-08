@@ -28,3 +28,23 @@ empty.story = {
     name: 'Empty Story',
     parameters: {}
 };
+
+const longTextContentPath = "/content/culebra-peak-design-system/button/jcr:content/root/container/container/longtext";
+export const longText = () => ({
+    template: async () => fetchFromAEM(longTextContentPath)
+});
+longText.story = {
+    name: 'Long Text Story',
+    parameters: {}
+};
+
+
+
+const shortTextContentPath = "/content/culebra-peak-design-system/button/jcr:content/root/container/container/shorttext";
+export const shortText = () => ({
+    template: async () => fetchFromAEM(shortTextContentPath)
+});
+shortText.story = {
+    name: 'Short Text Story',
+    parameters: {}
+};
